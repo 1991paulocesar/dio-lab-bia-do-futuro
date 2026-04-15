@@ -1,11 +1,101 @@
-data,descricao,categoria,valor,tipo
-2025-10-01,Salário,receita,5000.00,entrada
-2025-10-02,Aluguel,moradia,1200.00,saida
-2025-10-03,Supermercado,alimentacao,450.00,saida
-2025-10-05,Netflix,lazer,55.90,saida
-2025-10-07,Farmácia,saude,89.00,saida
-2025-10-10,Restaurante,alimentacao,120.00,saida
-2025-10-12,Uber,transporte,45.00,saida
-2025-10-15,Conta de Luz,moradia,180.00,saida
-2025-10-20,Academia,saude,99.00,saida
-2025-10-25,Combustível,transporte,250.00,saida
+usuario_id,data,descricao,categoria,valor,tipo
+USR001,2025-10-01,Salário,receita,5000.00,entrada
+USR001,2025-10-02,Aluguel,moradia,1200.00,saida
+USR001,2025-10-03,Supermercado,alimentacao,450.00,saida
+USR001,2025-10-05,Netflix,lazer,55.90,saida
+USR001,2025-10-07,Farmácia,saude,89.00,saida
+USR001,2025-10-10,Restaurante,alimentacao,120.00,saida
+USR001,2025-10-12,Uber,transporte,45.00,saida
+USR001,2025-10-15,Conta de Luz,moradia,180.00,saida
+USR001,2025-10-20,Academia,saude,99.00,saida
+USR001,2025-10-25,Combustível,transporte,250.00,saida
+USR001,2025-11-01,Salário,receita,5000.00,entrada
+USR001,2025-11-02,Aluguel,moradia,1200.00,saida
+USR001,2025-11-04,Supermercado,alimentacao,480.00,saida
+USR001,2025-11-06,Spotify,lazer,21.90,saida
+USR001,2025-11-10,Restaurante,alimentacao,95.00,saida
+USR001,2025-11-15,Conta de Água,moradia,75.00,saida
+USR001,2025-11-18,Uber,transporte,38.00,saida
+USR001,2025-11-22,Farmácia,saude,65.00,saida
+USR001,2025-11-28,Combustível,transporte,200.00,saida
+USR001,2025-11-30,Aporte Tesouro Selic,investimento,500.00,saida
+USR002,2025-10-01,Freela Design,receita,3200.00,entrada
+USR002,2025-10-02,Aluguel,moradia,900.00,saida
+USR002,2025-10-03,Supermercado,alimentacao,320.00,saida
+USR002,2025-10-05,Parcela cartão de crédito,divida,450.00,saida
+USR002,2025-10-08,Transporte público,transporte,110.00,saida
+USR002,2025-10-10,iFood,alimentacao,85.00,saida
+USR002,2025-10-12,Farmácia,saude,55.00,saida
+USR002,2025-10-15,Conta de Luz,moradia,95.00,saida
+USR002,2025-10-20,Roupas,lazer,189.90,saida
+USR002,2025-10-25,iFood,alimentacao,70.00,saida
+USR002,2025-11-01,Freela Design,receita,2800.00,entrada
+USR002,2025-11-02,Aluguel,moradia,900.00,saida
+USR002,2025-11-03,Supermercado,alimentacao,290.00,saida
+USR002,2025-11-05,Parcela cartão de crédito,divida,450.00,saida
+USR002,2025-11-08,Transporte público,transporte,110.00,saida
+USR002,2025-11-12,iFood,alimentacao,110.00,saida
+USR002,2025-11-15,Conta de Água,moradia,60.00,saida
+USR002,2025-11-20,Cinema,lazer,45.00,saida
+USR002,2025-11-25,Farmácia,saude,38.00,saida
+USR002,2025-11-28,Poupança,investimento,200.00,saida
+USR003,2025-10-01,Salário,receita,12000.00,entrada
+USR003,2025-10-02,Financiamento imóvel,moradia,2800.00,saida
+USR003,2025-10-03,Supermercado,alimentacao,850.00,saida
+USR003,2025-10-05,Plano de saúde,saude,780.00,saida
+USR003,2025-10-07,Escola dos filhos,educacao,1200.00,saida
+USR003,2025-10-10,Restaurante,alimentacao,320.00,saida
+USR003,2025-10-12,Combustível,transporte,400.00,saida
+USR003,2025-10-15,Conta de Luz,moradia,280.00,saida
+USR003,2025-10-20,Aporte FII,investimento,2000.00,saida
+USR003,2025-10-25,Aporte Fundo de Ações,investimento,1500.00,saida
+USR003,2025-11-01,Salário,receita,12000.00,entrada
+USR003,2025-11-02,Financiamento imóvel,moradia,2800.00,saida
+USR003,2025-11-03,Supermercado,alimentacao,920.00,saida
+USR003,2025-11-05,Plano de saúde,saude,780.00,saida
+USR003,2025-11-07,Escola dos filhos,educacao,1200.00,saida
+USR003,2025-11-10,Viagem de negócios,transporte,850.00,saida
+USR003,2025-11-15,Restaurante,alimentacao,450.00,saida
+USR003,2025-11-20,Aporte FII,investimento,2000.00,saida
+USR003,2025-11-25,Aporte CDB,investimento,2000.00,saida
+USR003,2025-11-28,Conta de Luz,moradia,310.00,saida
+USR004,2025-10-01,Estágio,receita,1200.00,entrada
+USR004,2025-10-02,Transporte público,transporte,110.00,saida
+USR004,2025-10-03,Supermercado,alimentacao,180.00,saida
+USR004,2025-10-05,Spotify,lazer,21.90,saida
+USR004,2025-10-08,Material universitário,educacao,95.00,saida
+USR004,2025-10-10,iFood,alimentacao,45.00,saida
+USR004,2025-10-15,Farmácia,saude,28.00,saida
+USR004,2025-10-20,Cinema,lazer,32.00,saida
+USR004,2025-10-25,Roupas,lazer,79.90,saida
+USR004,2025-10-28,Poupança,investimento,100.00,saida
+USR004,2025-11-01,Estágio,receita,1200.00,entrada
+USR004,2025-11-02,Transporte público,transporte,110.00,saida
+USR004,2025-11-03,Supermercado,alimentacao,165.00,saida
+USR004,2025-11-05,Netflix,lazer,45.90,saida
+USR004,2025-11-08,Material universitário,educacao,120.00,saida
+USR004,2025-11-10,iFood,alimentacao,55.00,saida
+USR004,2025-11-15,Farmácia,saude,19.00,saida
+USR004,2025-11-20,Show,lazer,89.00,saida
+USR004,2025-11-25,Lanche,alimentacao,35.00,saida
+USR004,2025-11-28,Poupança,investimento,150.00,saida
+USR005,2025-10-01,Salário médico,receita,22000.00,entrada
+USR005,2025-10-02,Financiamento imóvel,moradia,4500.00,saida
+USR005,2025-10-03,Supermercado premium,alimentacao,1200.00,saida
+USR005,2025-10-05,Plano de saúde família,saude,1800.00,saida
+USR005,2025-10-07,Escola internacional filhos,educacao,3200.00,saida
+USR005,2025-10-10,Restaurante,alimentacao,580.00,saida
+USR005,2025-10-12,Combustível,transporte,500.00,saida
+USR005,2025-10-15,Conta de Luz,moradia,420.00,saida
+USR005,2025-10-20,Aporte CDB,investimento,3000.00,saida
+USR005,2025-10-25,Aporte FII,investimento,2000.00,saida
+USR005,2025-11-01,Salário médico,receita,22000.00,entrada
+USR005,2025-11-02,Financiamento imóvel,moradia,4500.00,saida
+USR005,2025-11-03,Supermercado premium,alimentacao,1350.00,saida
+USR005,2025-11-05,Plano de saúde família,saude,1800.00,saida
+USR005,2025-11-07,Escola internacional filhos,educacao,3200.00,saida
+USR005,2025-11-10,Viagem família,lazer,4500.00,saida
+USR005,2025-11-15,Restaurante,alimentacao,720.00,saida
+USR005,2025-11-20,Aporte Tesouro Selic,investimento,2000.00,saida
+USR005,2025-11-25,Aporte Fundo de Ações,investimento,3000.00,saida
+USR005,2025-11-28,Conta de Luz,moradia,450.00,saida

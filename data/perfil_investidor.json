@@ -1,23 +1,132 @@
-{
-  "nome": "João Silva",
-  "idade": 32,
-  "profissao": "Analista de Sistemas",
-  "renda_mensal": 5000.00,
-  "perfil_investidor": "moderado",
-  "objetivo_principal": "Construir reserva de emergência",
-  "patrimonio_total": 15000.00,
-  "reserva_emergencia_atual": 10000.00,
-  "aceita_risco": false,
-  "metas": [
-    {
-      "meta": "Completar reserva de emergência",
-      "valor_necessario": 15000.00,
-      "prazo": "2026-06"
-    },
-    {
-      "meta": "Entrada do apartamento",
-      "valor_necessario": 50000.00,
-      "prazo": "2027-12"
-    }
-  ]
-}
+[
+  {
+    "id": "USR001",
+    "nome": "João Silva",
+    "idade": 32,
+    "profissao": "Analista de Sistemas",
+    "renda_mensal": 5000.00,
+    "perfil_investidor": "moderado",
+    "objetivo_principal": "Construir reserva de emergência",
+    "patrimonio_total": 15000.00,
+    "reserva_emergencia_atual": 10000.00,
+    "aceita_risco": false,
+    "metas": [
+      {
+        "meta": "Completar reserva de emergência",
+        "valor_necessario": 15000.00,
+        "valor_atual": 10000.00,
+        "prazo": "2026-06"
+      },
+      {
+        "meta": "Entrada do apartamento",
+        "valor_necessario": 50000.00,
+        "valor_atual": 5000.00,
+        "prazo": "2027-12"
+      }
+    ]
+  },
+  {
+    "id": "USR002",
+    "nome": "Maria Oliveira",
+    "idade": 25,
+    "profissao": "Designer Gráfica Freelancer",
+    "renda_mensal": 3200.00,
+    "perfil_investidor": "conservador",
+    "objetivo_principal": "Organizar finanças e quitar dívidas",
+    "patrimonio_total": 2000.00,
+    "reserva_emergencia_atual": 500.00,
+    "aceita_risco": false,
+    "metas": [
+      {
+        "meta": "Quitar cartão de crédito",
+        "valor_necessario": 4500.00,
+        "valor_atual": 1200.00,
+        "prazo": "2026-03"
+      },
+      {
+        "meta": "Criar reserva de emergência",
+        "valor_necessario": 9600.00,
+        "valor_atual": 500.00,
+        "prazo": "2027-06"
+      }
+    ]
+  },
+  {
+    "id": "USR003",
+    "nome": "Carlos Souza",
+    "idade": 45,
+    "profissao": "Gerente Comercial",
+    "renda_mensal": 12000.00,
+    "perfil_investidor": "arrojado",
+    "objetivo_principal": "Diversificar investimentos para aposentadoria",
+    "patrimonio_total": 180000.00,
+    "reserva_emergencia_atual": 36000.00,
+    "aceita_risco": true,
+    "metas": [
+      {
+        "meta": "Aposentadoria antecipada aos 55 anos",
+        "valor_necessario": 1000000.00,
+        "valor_atual": 180000.00,
+        "prazo": "2034-12"
+      },
+      {
+        "meta": "Compra de imóvel para renda passiva",
+        "valor_necessario": 300000.00,
+        "valor_atual": 80000.00,
+        "prazo": "2028-06"
+      }
+    ]
+  },
+  {
+    "id": "USR004",
+    "nome": "Ana Ferreira",
+    "idade": 19,
+    "profissao": "Estudante universitária / Estagiária",
+    "renda_mensal": 1200.00,
+    "perfil_investidor": "conservador",
+    "objetivo_principal": "Primeiro investimento e controle de gastos",
+    "patrimonio_total": 800.00,
+    "reserva_emergencia_atual": 300.00,
+    "aceita_risco": false,
+    "metas": [
+      {
+        "meta": "Guardar para intercâmbio",
+        "valor_necessario": 15000.00,
+        "valor_atual": 800.00,
+        "prazo": "2027-01"
+      },
+      {
+        "meta": "Criar reserva de emergência básica",
+        "valor_necessario": 3600.00,
+        "valor_atual": 300.00,
+        "prazo": "2026-12"
+      }
+    ]
+  },
+  {
+    "id": "USR005",
+    "nome": "Roberto Lima",
+    "idade": 38,
+    "profissao": "Médico",
+    "renda_mensal": 22000.00,
+    "perfil_investidor": "moderado",
+    "objetivo_principal": "Planejamento tributário e diversificação",
+    "patrimonio_total": 420000.00,
+    "reserva_emergencia_atual": 66000.00,
+    "aceita_risco": true,
+    "metas": [
+      {
+        "meta": "Abrir clínica própria",
+        "valor_necessario": 200000.00,
+        "valor_atual": 95000.00,
+        "prazo": "2027-06"
+      },
+      {
+        "meta": "Fundo educação dos filhos",
+        "valor_necessario": 150000.00,
+        "valor_atual": 42000.00,
+        "prazo": "2035-01"
+      }
+    ]
+  }
+]

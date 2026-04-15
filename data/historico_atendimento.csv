@@ -1,6 +1,36 @@
-data,canal,tema,resumo,resolvido
-2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos,sim
-2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
-2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
-2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
-2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+usuario_id,data,canal,tema,resumo,resolvido
+USR001,2025-09-15,chat,CDB,Cliente perguntou sobre rentabilidade e prazos do CDB,sim
+USR001,2025-09-22,telefone,Problema no app,Erro ao visualizar extrato foi corrigido,sim
+USR001,2025-10-01,chat,Tesouro Selic,Cliente pediu explicação sobre o funcionamento do Tesouro Direto,sim
+USR001,2025-10-12,chat,Metas financeiras,Cliente acompanhou o progresso da reserva de emergência,sim
+USR001,2025-10-25,email,Atualização cadastral,Cliente atualizou e-mail e telefone,sim
+USR001,2025-11-05,chat,Alerta de gastos,Agente alertou sobre gastos de alimentação 20% acima da meta,sim
+USR001,2025-11-18,chat,Planejamento,Cliente revisou meta de entrada do apartamento,sim
+USR002,2025-09-10,chat,Dívidas,Cliente perguntou sobre estratégias para quitar cartão de crédito,sim
+USR002,2025-09-20,email,Orçamento,Agente ajudou a montar orçamento mensal básico,sim
+USR002,2025-10-05,chat,Alerta de gastos,Agente alertou que gastos com alimentação ultrapassaram o limite,sim
+USR002,2025-10-15,chat,Poupança,Cliente tirou dúvidas sobre diferença entre poupança e Tesouro Selic,sim
+USR002,2025-11-02,chat,Metas financeiras,Cliente revisou prazo para quitar cartão de crédito,sim
+USR002,2025-11-20,telefone,Problema no app,Dificuldade para registrar despesas foi resolvida,sim
+USR002,2025-11-28,chat,Planejamento,Agente sugeriu redução de gastos com iFood para acelerar quitação da dívida,sim
+USR003,2025-09-08,chat,FII,Cliente perguntou sobre dividend yield e como escolher FIIs,sim
+USR003,2025-09-18,email,Aposentadoria,Cliente revisou projeção de patrimônio para aposentadoria,sim
+USR003,2025-10-03,chat,Diversificação,Agente explicou conceito de diversificação de carteira,sim
+USR003,2025-10-15,chat,Alerta de gastos,Gastos com alimentação em outubro 35% acima da média histórica,sim
+USR003,2025-10-28,chat,Imóvel,Cliente perguntou sobre estratégia de compra de imóvel para renda,sim
+USR003,2025-11-10,telefone,Fundo de ações,Cliente tirou dúvidas sobre volatilidade de fundos de ações,sim
+USR003,2025-11-25,chat,Metas financeiras,Revisão do progresso da meta de aposentadoria,sim
+USR004,2025-09-12,chat,Primeiro investimento,Cliente perguntou por onde começar a investir com pouco dinheiro,sim
+USR004,2025-09-25,chat,Tesouro Selic,Agente explicou como funciona o Tesouro Selic para iniciantes,sim
+USR004,2025-10-08,email,Orçamento,Agente ajudou a criar primeiro orçamento mensal,sim
+USR004,2025-10-20,chat,Alerta de gastos,Gastos com lazer representaram 30% da renda em outubro,sim
+USR004,2025-11-05,chat,Intercâmbio,Cliente revisou meta e prazo para guardar para intercâmbio,sim
+USR004,2025-11-15,chat,Reserva de emergência,Agente explicou importância e como calcular reserva de emergência,sim
+USR004,2025-11-28,chat,Metas financeiras,Cliente aumentou aporte mensal de R$100 para R$150,sim
+USR005,2025-09-05,chat,Tributação,Cliente perguntou sobre IR em investimentos e planejamento tributário,sim
+USR005,2025-09-18,email,Clínica própria,Agente orientou sobre organização financeira para abertura de negócio,sim
+USR005,2025-10-02,chat,Diversificação,Revisão da carteira de investimentos e diversificação,sim
+USR005,2025-10-18,chat,Alerta de gastos,Gastos com lazer em outubro (viagem) representaram 20% da renda,sim
+USR005,2025-10-30,telefone,Fundo educação,Cliente revisou projeção do fundo educação dos filhos,sim
+USR005,2025-11-12,chat,Metas financeiras,Revisão do prazo para abertura da clínica própria,sim
+USR005,2025-11-26,chat,CDB,Cliente comparou rentabilidade de CDB com Tesouro Selic,sim

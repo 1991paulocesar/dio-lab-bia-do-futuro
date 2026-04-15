@@ -1,42 +1,160 @@
 [
   {
-    "nome": "Tesouro Selic",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "100% da Selic",
-    "aporte_minimo": 30.00,
-    "indicado_para": "Reserva de emergência e iniciantes"
+    "usuario_id": "USR001",
+    "metas": [
+      {
+        "id": "META001",
+        "descricao": "Completar reserva de emergência",
+        "valor_necessario": 15000.00,
+        "valor_atual": 10000.00,
+        "prazo": "2026-06",
+        "categoria": "reserva_emergencia",
+        "status": "em_andamento"
+      },
+      {
+        "id": "META002",
+        "descricao": "Entrada do apartamento",
+        "valor_necessario": 50000.00,
+        "valor_atual": 5000.00,
+        "prazo": "2027-12",
+        "categoria": "imovel",
+        "status": "em_andamento"
+      }
+    ],
+    "limite_gastos_mensais": {
+      "moradia": 1400.00,
+      "alimentacao": 500.00,
+      "transporte": 300.00,
+      "saude": 200.00,
+      "lazer": 150.00,
+      "investimento": 500.00
+    }
   },
   {
-    "nome": "CDB Liquidez Diária",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "102% do CDI",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Quem busca segurança com rendimento diário"
+    "usuario_id": "USR002",
+    "metas": [
+      {
+        "id": "META003",
+        "descricao": "Quitar cartão de crédito",
+        "valor_necessario": 4500.00,
+        "valor_atual": 1200.00,
+        "prazo": "2026-03",
+        "categoria": "quitacao_divida",
+        "status": "em_andamento"
+      },
+      {
+        "id": "META004",
+        "descricao": "Criar reserva de emergência",
+        "valor_necessario": 9600.00,
+        "valor_atual": 500.00,
+        "prazo": "2027-06",
+        "categoria": "reserva_emergencia",
+        "status": "em_andamento"
+      }
+    ],
+    "limite_gastos_mensais": {
+      "moradia": 950.00,
+      "alimentacao": 350.00,
+      "transporte": 120.00,
+      "saude": 80.00,
+      "lazer": 100.00,
+      "divida": 450.00
+    }
   },
   {
-    "nome": "LCI/LCA",
-    "categoria": "renda_fixa",
-    "risco": "baixo",
-    "rentabilidade": "95% do CDI",
-    "aporte_minimo": 1000.00,
-    "indicado_para": "Quem pode esperar 90 dias (isento de IR)"
+    "usuario_id": "USR003",
+    "metas": [
+      {
+        "id": "META005",
+        "descricao": "Aposentadoria antecipada aos 55 anos",
+        "valor_necessario": 1000000.00,
+        "valor_atual": 180000.00,
+        "prazo": "2034-12",
+        "categoria": "aposentadoria",
+        "status": "em_andamento"
+      },
+      {
+        "id": "META006",
+        "descricao": "Compra de imóvel para renda passiva",
+        "valor_necessario": 300000.00,
+        "valor_atual": 80000.00,
+        "prazo": "2028-06",
+        "categoria": "imovel",
+        "status": "em_andamento"
+      }
+    ],
+    "limite_gastos_mensais": {
+      "moradia": 3000.00,
+      "alimentacao": 1000.00,
+      "transporte": 500.00,
+      "saude": 850.00,
+      "lazer": 800.00,
+      "educacao": 1300.00,
+      "investimento": 4000.00
+    }
   },
   {
-    "nome": "Fundo Imobiliário (FII)",
-    "categoria": "fundo",
-    "risco": "medio",
-    "rentabilidade": "Dividend Yield (DY) costuma ficar entre 6% a 12% ao ano",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil moderado que busca diversificação e renda recorrente mensal"
+    "usuario_id": "USR004",
+    "metas": [
+      {
+        "id": "META007",
+        "descricao": "Guardar para intercâmbio",
+        "valor_necessario": 15000.00,
+        "valor_atual": 800.00,
+        "prazo": "2027-01",
+        "categoria": "viagem",
+        "status": "em_andamento"
+      },
+      {
+        "id": "META008",
+        "descricao": "Criar reserva de emergência básica",
+        "valor_necessario": 3600.00,
+        "valor_atual": 300.00,
+        "prazo": "2026-12",
+        "categoria": "reserva_emergencia",
+        "status": "em_andamento"
+      }
+    ],
+    "limite_gastos_mensais": {
+      "moradia": 0.00,
+      "alimentacao": 200.00,
+      "transporte": 120.00,
+      "saude": 50.00,
+      "lazer": 100.00,
+      "educacao": 150.00,
+      "investimento": 150.00
+    }
   },
   {
-    "nome": "Fundo de Ações",
-    "categoria": "fundo",
-    "risco": "alto",
-    "rentabilidade": "Variável",
-    "aporte_minimo": 100.00,
-    "indicado_para": "Perfil arrojado com foco no longo prazo"
+    "usuario_id": "USR005",
+    "metas": [
+      {
+        "id": "META009",
+        "descricao": "Abrir clínica própria",
+        "valor_necessario": 200000.00,
+        "valor_atual": 95000.00,
+        "prazo": "2027-06",
+        "categoria": "negocio_proprio",
+        "status": "em_andamento"
+      },
+      {
+        "id": "META010",
+        "descricao": "Fundo educação dos filhos",
+        "valor_necessario": 150000.00,
+        "valor_atual": 42000.00,
+        "prazo": "2035-01",
+        "categoria": "educacao_filhos",
+        "status": "em_andamento"
+      }
+    ],
+    "limite_gastos_mensais": {
+      "moradia": 5000.00,
+      "alimentacao": 1500.00,
+      "transporte": 600.00,
+      "saude": 2000.00,
+      "lazer": 2000.00,
+      "educacao": 3500.00,
+      "investimento": 5000.00
+    }
   }
 ]
