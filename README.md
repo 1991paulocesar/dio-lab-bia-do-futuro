@@ -1,103 +1,147 @@
-# 🎓 Edu - Educador Financeiro Inteligente
+# 💰 PCFinance - Assistente Financeiro Inteligente
 
-> Agente de IA Generativa que ensina conceitos de finanças pessoais de forma simples e personalizada, usando os próprios dados do cliente como exemplos práticos.
+> Agente de IA Generativa focado em controle de gastos e planejamento de metas financeiras pessoais, desenvolvido como parte do **Bootcamp Bradesco - GENAI & Dados** na [DIO](https://www.dio.me/).
 
-## 💡 O Que é o Edu?
+## 💡 O Que é o PCFinance?
 
-O Edu é um educador financeiro que **ensina**, não recomenda. Ele explica conceitos como reserva de emergência, tipos de investimentos e análise de gastos usando uma abordagem didática e exemplos concretos baseados no perfil do cliente.
+O PCFinance é um assistente financeiro pessoal que orienta usuários no controle de gastos, planejamento de metas e educação financeira básica. Utiliza os dados reais do usuário logado como contexto dinâmico para gerar respostas personalizadas e alertas inteligentes.
 
-**O que o Edu faz:**
-- ✅ Explica conceitos financeiros de forma simples
-- ✅ Usa dados do cliente como exemplos práticos
-- ✅ Responde dúvidas sobre produtos financeiros
-- ✅ Analisa padrões de gastos de forma educativa
+**O que o PCFinance faz:**
+- ✅ Monitora gastos por categoria e emite alertas quando os limites são ultrapassados
+- ✅ Acompanha o progresso de metas financeiras com valores e percentuais
+- ✅ Explica conceitos financeiros básicos de forma acessível
+- ✅ Suporta múltiplos usuários com histórico isolado por sessão
+- ✅ Exibe métricas de latência e consumo de tokens em tempo real
 
-**O que o Edu NÃO faz:**
+**O que o PCFinance NÃO faz:**
 - ❌ Não recomenda investimentos específicos
 - ❌ Não acessa dados bancários sensíveis
-- ❌ Não substitui um profissional certificado
+- ❌ Não compartilha dados entre usuários
+- ❌ Não substitui um profissional financeiro certificado
 
 ## 🏗️ Arquitetura
 
 ```mermaid
 flowchart TD
-    A[Usuário] --> B[Streamlit]
-    B --> C[Ollama - LLM Local]
+    A[Usuário] --> B["Streamlit (Interface Visual)"]
+    B --> C["LLM (Gemini 2.5 Flash)"]
     C --> D[Base de Conhecimento]
     D --> C
-    C --> E[Resposta Educativa]
+    C --> E[Validação e Anti-Alucinação]
+    E --> F[Resposta ao Usuário]
+
+    subgraph Base de Conhecimento
+        D1[perfil_investidor.json]
+        D2[transacoes.csv]
+        D3[metas_financeiras.json]
+        D4[historico_atendimento.csv]
+        D5[produtos_financeiros.json]
+    end
+
+    D --> D1
+    D --> D2
+    D --> D3
+    D --> D4
+    D --> D5
 ```
 
 **Stack:**
-- Interface: Streamlit
-- LLM: Ollama (modelo local `gpt-oss`)
-- Dados: JSON/CSV mockados
+- Interface: [Streamlit](https://streamlit.io/)
+- LLM: Gemini 2.5 Flash via [Google AI API](https://ai.google.dev/)
+- Dados: JSON/CSV mockados com 5 perfis de usuários
+- Segurança: API Key protegida via variável de ambiente `.env`
 
 ## 📁 Estrutura do Projeto
 
 ```
-├── data/                          # Base de conhecimento
-│   ├── perfil_investidor.json     # Perfil do cliente
-│   ├── transacoes.csv             # Histórico financeiro
-│   ├── historico_atendimento.csv  # Interações anteriores
-│   └── produtos_financeiros.json  # Produtos para ensino
+dio-lab-bia-do-futuro/
 │
-├── docs/                          # Documentação completa
+├── data/
+│   ├── perfil_investidor.json      # Perfis dos 5 usuários
+│   ├── transacoes.csv              # Transações por usuário (2 meses)
+│   ├── historico_atendimento.csv   # Histórico de atendimentos
+│   ├── metas_financeiras.json      # Metas e limites por categoria
+│   └── produtos_financeiros.json  # Produtos financeiros disponíveis
+│
+├── docs/
 │   ├── 01-documentacao-agente.md  # Caso de uso e persona
 │   ├── 02-base-conhecimento.md    # Estratégia de dados
 │   ├── 03-prompts.md              # System prompt e exemplos
 │   ├── 04-metricas.md             # Avaliação de qualidade
 │   └── 05-pitch.md                # Apresentação do projeto
 │
-└── src/
-    └── app.py                     # Aplicação Streamlit
+├── src/
+│   ├── app.py                     # Aplicação Streamlit
+│   └── README.md                  # Instruções de execução
+│
+├── .env.example                   # Exemplo de configuração da API Key
+├── .gitignore                     # Ignora .env e arquivos sensíveis
+└── README.md                      # Este arquivo
 ```
 
 ## 🚀 Como Executar
 
-### 1. Instalar Ollama
+### 1. Configurar a API Key
 
-```bash
-# Baixar em: ollama.com
-ollama pull gpt-oss
-ollama serve
+Crie um arquivo `.env` na raiz do projeto:
+
 ```
+GEMINI_API_KEY=sua_key_aqui
+```
+
+> 🔑 Obtenha sua key gratuita em [aistudio.google.com](https://aistudio.google.com)  
+> ⚠️ Nunca suba o arquivo `.env` para o repositório!
 
 ### 2. Instalar Dependências
 
 ```bash
-pip install streamlit pandas requests
+pip install streamlit pandas google-genai python-dotenv
 ```
 
-### 3. Rodar o Edu
+### 3. Rodar a Aplicação
 
 ```bash
 streamlit run src/app.py
 ```
 
-## 🎯 Exemplo de Uso
+## 🎯 Exemplos de Uso
 
-**Pergunta:** "O que é CDI?"  
-**Edu:** "CDI é uma taxa de referência usada pelos bancos. Quando um investimento rende '100% do CDI', significa que ele acompanha essa taxa. Hoje o CDI está próximo da Selic. Quer que eu explique a diferença entre os dois?"
+**Pergunta:** "Como estão meus gastos este mês?"  
+**PCFinance:** "Com base nas suas transações de outubro, seus gastos com alimentação estão 36% acima do limite definido (R$ 475,00 vs R$ 350,00). Considerando sua meta de quitar o cartão até março/2026, uma redução nessa categoria liberaria R$ 125,00 mensais para acelerar o pagamento. Gostaria de entender como reorganizar esse ajuste?"
 
-**Pergunta:** "Onde estou gastando mais?"  
-**Edu:** "Olhando suas transações de outubro, sua maior despesa é moradia (R$ 1.380), seguida de alimentação (R$ 570). Juntas, representam quase 80% dos seus gastos. Isso é bem comum! Quer que eu explique algumas estratégias de organização?"
+**Pergunta:** "Qual o progresso da minha reserva de emergência?"  
+**PCFinance:** "Sua reserva de emergência está em R$ 10.000,00 de um total de R$ 15.000,00 (66,7%). Com o aporte mensal atual de R$ 500,00, você atingirá a meta em aproximadamente 10 meses, dentro do prazo de junho/2026. Deseja revisar o valor do aporte?"
 
-## 📊 Métricas de Avaliação
+## 📊 Métricas e Avaliação
 
 | Métrica | Objetivo |
 |---------|----------|
-| **Assertividade** | O agente responde o que foi perguntado? |
-| **Segurança** | Evita inventar informações (anti-alucinação)? |
-| **Coerência** | A resposta é adequada ao perfil do cliente? |
+| **Assertividade** | O agente respondeu o que foi perguntado? |
+| **Segurança** | Evitou inventar informações (anti-alucinação)? |
+| **Coerência** | A resposta considerou o perfil e contexto do usuário? |
+| **Latência** | Tempo de resposta da API em milissegundos |
+| **Tokens** | Consumo por requisição exibido em tempo real |
 
-## 🎬 Diferenciais
+## 🎬 Diferenciais em Relação ao Projeto Original
 
-- **Personalização:** Usa os dados do próprio cliente nos exemplos
-- **100% Local:** Roda com Ollama, sem enviar dados para APIs externas
-- **Educativo:** Foco em ensinar, não em vender produtos
-- **Seguro:** Estratégias de anti-alucinação documentadas
+| Item | Original (Edu) | PCFinance |
+|------|---------------|-----------|
+| LLM | Ollama (local) | Gemini 2.5 Flash (API) |
+| Usuários | 1 usuário fixo | 5 usuários selecionáveis |
+| Histórico | Compartilhado | Isolado por usuário |
+| Metas | Não tinha | `metas_financeiras.json` |
+| Alertas de gastos | Manual | Calculados automaticamente |
+| Métricas | Não tinha | Latência e tokens em tempo real |
+| Foco | Educação financeira | Controle de gastos e metas |
+| Tom | Informal | Formal |
+
+## 🔮 Melhorias Futuras
+
+- **Integração com MySQL** (PCFinance - Senac): substituir os CSVs mockados por consultas SQL ao banco de dados real, com persistência de conversas via tabela de logs
+- **Autenticação real**: substituir o seletor de usuário por login com senha
+- **Gráficos de gastos**: visualizações interativas por categoria e período com Plotly
+- **Monitoramento avançado**: integração com LangWatch ou LangFuse para análise de qualidade em escala
 
 ## 📝 Documentação Completa
 
-Toda a documentação técnica, estratégias de prompt e casos de teste estão disponíveis na pasta [`docs/`](./docs/).
+Toda a documentação técnica está disponível na pasta [`docs/`](./docs/).
