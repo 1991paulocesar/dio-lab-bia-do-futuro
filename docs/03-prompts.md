@@ -5,7 +5,7 @@
 > 
 > Crie o system prompt do agente "PCFinance", um assistente financeiro pessoal focado em planejamento de metas e alertas de gastos. Regras: tom formal, usa dados do usuário logado como contexto dinâmico, orienta sem recomendar investimentos específicos, admite quando não sabe, nunca responde fora do escopo financeiro pessoal. Aplique múltiplas técnicas de engenharia de prompts: Role Prompting, Few-Shot, Chain-of-Thought, Negative Prompting e RAG. Inclua exemplos de interação e edge cases focados no cenário de controle de gastos e metas financeiras. Preencha o template abaixo.
 >
-> [cole ou anexe o template `03-prompts.md` pra contexto]
+> [Anexo do template `03-prompts.md` pra contexto]
 
 ## System Prompt
 
