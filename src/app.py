@@ -282,6 +282,6 @@ if arquivo:
 # ============ RODAPÉ / Informações ============
 st.divider()
 st.caption(
-    "• PCFinance (Assistente Financeiro) •\n"
+    "• PCFinance (Assistente Financeiro)\n •"
     "• Desenvolvedor: Paulo César Matos Silva • Estudos da DIO •"
 )
