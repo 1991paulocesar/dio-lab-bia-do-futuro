@@ -5,7 +5,7 @@
 > 
 > Crie a documentação de um agente chamado "PCFinance", um assistente financeiro pessoal que ajuda usuários a planejar metas financeiras e monitorar gastos de forma simples e acessível. Ele não recomenda investimentos, apenas orienta e educa sobre organização financeira. Tom formal e acessível. Preencha o template abaixo.
 >
-> [cole ou anexe o template `01-documentacao-agente.md` pra contexto]
+> Template `01-documentacao-agente.md` para contexto.
 
 
 ## Caso de Uso

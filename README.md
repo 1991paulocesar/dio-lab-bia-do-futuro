@@ -169,8 +169,9 @@ Resumo mensal com receitas, gastos e saldo.
 | Histórico | Compartilhado | Isolado por usuário |
 | Metas | Não tinha | `metas_financeiras.json` |
 | Alertas de gastos | Manual | Calculados automaticamente |
-| Métricas | Não tinha | Latência e tokens em tempo real |
+| Métricas | Não tinha | Receitas-Gastos-Saldo na Tela inical |
 | Foco | Educação financeira | Controle de gastos e metas |
+| Upload de Arquivos | Não tinha | Campo para Uploads na Página Principal |
 | Tom | Informal | Formal |
 
 ## 🔮 Melhorias Futuras

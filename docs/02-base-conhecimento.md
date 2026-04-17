@@ -5,7 +5,7 @@
 > 
 > Organize a base de conhecimento do agente "PCFinance" usando os 5 arquivos da pasta `data/`. Explique para que serve cada arquivo, implemente o carregamento dinâmico dos dados por usuário logado e monte um exemplo de contexto formatado focado em controle de gastos e metas financeiras pessoais. Preencha o template abaixo.
 >
-> [cole ou anexe o template `02-base-conhecimento.md` pra contexto]
+> Template `02-base-conhecimento.md` para contexto
 
 ## Dados Utilizados
 
