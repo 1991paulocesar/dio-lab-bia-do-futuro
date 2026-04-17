@@ -1,5 +1,9 @@
 # 💰 PCFinance - Assistente Financeiro Inteligente
 
+![Status](https://img.shields.io/badge/status-concluído-success)
+![Python](https://img.shields.io/badge/python-3.10+-blue)
+![Streamlit](https://img.shields.io/badge/streamlit-app-red)
+
 > Agente de IA Generativa focado em controle de gastos e planejamento de metas financeiras pessoais, desenvolvido como parte do **Bootcamp Bradesco - GENAI & Dados** na [DIO](https://www.dio.me/).
 
 ## 💡 O Que é o PCFinance?
@@ -119,8 +123,42 @@ streamlit run src/app.py
 | **Assertividade** | O agente respondeu o que foi perguntado? |
 | **Segurança** | Evitou inventar informações (anti-alucinação)? |
 | **Coerência** | A resposta considerou o perfil e contexto do usuário? |
-| **Latência** | Tempo de resposta da API em milissegundos |
-| **Tokens** | Consumo por requisição exibido em tempo real |
+
+## 📸 Demonstração
+
+Abaixo estão exemplos visuais da aplicação em funcionamento:
+
+### 🏠 Tela Inicial
+Interface principal do PCFinance com seleção de usuário e visão geral.
+
+![Tela Inicial](assets/tela-inicial.png)
+
+---
+
+### 👤 Seleção de Usuário
+Escolha de diferentes perfis com dados financeiros distintos.
+
+![Seleção de Usuário](assets/selecao-usuarios.png)
+
+---
+
+### 💬 Interação com o Assistente / 🤖 Resposta da IA
+Usuário realizando uma pergunta financeira.
+Resposta personalizada baseada no contexto financeiro do usuário.
+
+![Pergunta / Resposta](assets/conversa-chatbot.png)
+
+---
+
+### 📊 Métricas Financeiras
+Resumo mensal com receitas, gastos e saldo.
+
+![Métricas](assets/receitas-gastos-saldo.png)
+
+### 🎥 Demonstração em Vídeo
+
+![Vídeo](assets/apresentacao)
+
 
 ## 🎬 Diferenciais em Relação ao Projeto Original
 
