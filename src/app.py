@@ -269,21 +269,19 @@ with col_chat:
             'total_tokens': resultado['total_tokens']
         })
 
-with col_logs:
-    st.subheader("📈 Métricas de Execução")
-    if st.session_state.logs:
-        ultimo = st.session_state.logs[-1]
-        st.metric("⏱️ Latência", f"{ultimo['latencia_ms']} ms")
-        st.metric("📥 Tokens entrada", ultimo['tokens_entrada'])
-        st.metric("📤 Tokens saída", ultimo['tokens_saida'])
-        st.metric("🔢 Total tokens", ultimo['total_tokens'])
-        st.divider()
-        st.caption("📋 Histórico de requisições:")
-        for log in reversed(st.session_state.logs):
-            st.caption(
-                f"👤 {log['usuario']} | "
-                f"⏱️ {log['latencia_ms']}ms | "
-                f"🔢 {log['total_tokens']} tokens"
-            )
-    else:
-        st.info("As métricas aparecerão após a primeira pergunta.")
+# ============ UPLOAD DE ARQUIVO (OPCIONAL) ============
+
+arquivo = st.file_uploader(
+    "📎 Carregar arquivo (opcional)",
+    type=None
+)
+
+if arquivo:
+    st.success(f"Arquivo carregado: {arquivo.name}")
+
+# ============ RODAPÉ / Informações ============
+st.divider()
+st.caption(
+    "• PCFinance (Assistente Financeiro) •\n"
+    "• Desenvolvedor: Paulo César Matos Silva • Estudos da DIO •"
+)
