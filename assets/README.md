@@ -31,4 +31,6 @@ Resumo mensal com receitas, gastos e saldo.
 
 ### 🎥 Demonstração em Vídeo
 
-![Vídeo](apresentacao)
+!## Link do Vídeo
+
+[🎥 Assistir ao pitch](https://www.loom.com/share/1e65228b3a7f4f08aa81bdf3185e9c20)
